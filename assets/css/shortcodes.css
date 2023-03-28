@@ -4374,6 +4374,12 @@ input.star {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  #about-img {
+    display: none;
+  }
+}
+
 .features-list > div {
   display: flex;
   gap: 8px;
@@ -4386,4 +4392,19 @@ input.star {
 
 .features-list i {
   font-size: 16px;
+}
+
+.about-img-wrapper {
+  position: absolute;
+  top: 0;
+  right: -350px;
+
+  display: flex;
+  align-items: center;
+
+  height: 100%;
+}
+
+.about-img-wrapper img {
+  width: 800px;
 }

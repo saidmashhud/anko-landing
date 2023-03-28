@@ -389,16 +389,17 @@
   let aboutImgIndex = 1;
   const aboutImage = $("#about-img");
   // my scripts
+  if (aboutImage.css("display") !== "none") {
+    setInterval(() => {
+      if (aboutImgIndex === 4) {
+        aboutImgIndex = 1;
+      }
+      aboutImage.fadeOut(1000, () => {
+        aboutImage.attr("src", `assets/img/farovon/about-${aboutImgIndex}.png`);
+        aboutImage.fadeIn();
+      });
 
-  setInterval(() => {
-    if (aboutImgIndex === 4) {
-      aboutImgIndex = 1;
-    }
-    aboutImage.fadeOut(1000, () => {
-      aboutImage.attr("src", `assets/img/farovon/about-${aboutImgIndex}.png`);
-      aboutImage.fadeIn(1000);
-    });
-
-    aboutImgIndex++;
-  }, 4000);
+      aboutImgIndex++;
+    }, 4000);
+  }
 })(jQuery);

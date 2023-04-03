@@ -391,10 +391,10 @@
   // my scripts
   if (aboutImage.css("display") !== "none") {
     setInterval(() => {
-      if (aboutImgIndex === 4) {
-        aboutImgIndex = 1;
-      }
       aboutImage.fadeOut(1000, () => {
+        if (aboutImgIndex === 4) {
+          aboutImgIndex = 1;
+        }
         aboutImage.attr("src", `assets/img/farovon/about-${aboutImgIndex}.png`);
         aboutImage.fadeIn();
       });

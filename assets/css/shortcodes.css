@@ -4408,3 +4408,8 @@ input.star {
 .about-img-wrapper img {
   width: 800px;
 }
+
+iframe {
+  transition: opacity 500ms ease-in-out;
+  transition-delay: 250ms;
+}

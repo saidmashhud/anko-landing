@@ -392,14 +392,14 @@
   if (aboutImage.css("display") !== "none") {
     setInterval(() => {
       aboutImage.fadeOut(1000, () => {
-        if (aboutImgIndex === 4) {
-          aboutImgIndex = 1;
-        }
         aboutImage.attr("src", `assets/img/farovon/about-${aboutImgIndex}.png`);
         aboutImage.fadeIn();
       });
-
-      aboutImgIndex++;
+      if (aboutImgIndex === 3) {
+        aboutImgIndex = 1;
+      } else {
+        aboutImgIndex++;
+      }
     }, 4000);
   }
 })(jQuery);

@@ -4409,7 +4409,27 @@ input.star {
   width: 800px;
 }
 
-iframe {
-  transition: opacity 500ms ease-in-out;
-  transition-delay: 250ms;
+@media only screen and (max-width: 576px) {
+  h3 {
+    line-height: 1.1 !important;
+    font-size: 36px !important;
+  }
+
+  .content-about-us p {
+    font-size: 18px !important;
+  }
+
+  .tf-heading {
+    margin-top: 40px;
+  }
+
+  .tf-heading h4 {
+    font-size: 36px !important;
+    line-height: 1 !important;
+  }
+
+  .features-list i {
+    font-size: 14px;
+    padding: 2px 0;
+  }
 }

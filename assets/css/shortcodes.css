@@ -318,8 +318,7 @@
 -------------------------------------------------------------- */
 .page-title {
   position: relative;
-  padding-top: 229px;
-  padding-bottom: 158px;
+  padding-top: 156px;
   background: linear-gradient(
       150deg,
       rgba(2, 6, 9, 0.93) 33%,
@@ -328,6 +327,7 @@
     url("../img/farovon/bg.png") no-repeat fixed center center;
   z-index: 100;
   background-size: cover;
+  height: 80vh;
 }
 
 .slider .img-bg2 {

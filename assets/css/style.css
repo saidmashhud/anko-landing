@@ -2367,3 +2367,7 @@ h6 a {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
+
+.swiper-button-disabled {
+  display: none !important;
+}
